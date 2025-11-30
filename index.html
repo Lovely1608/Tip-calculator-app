@@ -31,17 +31,17 @@
       <div class="left-container">
         <p>Bill</p>
         <input type="number" name="number" id="userAmount" />
-        <img src="images/icon-dollar.svg" alt="dollar icon" />
+        <img src="images/icon-dollar.svg" alt="dollar icon" id="billInput"/>
 
         <div class="tip-container">
           <p>Select Tip %</p>
-          <button class="tipBtn">5%</button>
-          <button class="tipBtn">10%</button>
-          <button class="tipBtn">15%</button>
-          <button class="tipBtn">25%</button>
-          <button class="tipBtn">50%</button>
+          <button class="tipBtn" id="5">5%</button>
+          <button class="tipBtn" id="10">10%</button>
+          <button class="tipBtn" id="15">15%</button>
+          <button class="tipBtn" id="25">25%</button>
+          <button class="tipBtn" id="50">50%</button>
           <input
-            type="number"
+            type="text"
             name="CustomNumber"
             id="CustomNumber"
             class="tipBtn"
@@ -50,7 +50,7 @@
             min="1"
           />
 
-          <small> Number of People</small>
+          <small>Number of People</small>
           <input
             type="number"
             name="number"
@@ -64,13 +64,13 @@
         <div>
           <b>Tip Amount</b>
           <small> / person</small>
-          <span></span>
+          <span id="tip"></span>
         </div>
 
         <div>
           <b>Total</b>
           <small> / person</small>
-          <span></span>
+          <span id="total"></span>
         </div>
 
         <button>Reset</button>
@@ -84,6 +84,6 @@
       >. Coded by <a href="#">Your Name Here</a>.
     </div>
 
-    <style src="script.js"></style>
+<script src="script.js"></script>
   </body>
 </html>
