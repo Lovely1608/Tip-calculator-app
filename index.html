@@ -29,13 +29,13 @@
     <main>
       <img src="images/logo.svg" alt="logo in letters" />
       <div class="left-container">
-        <p>Bill</p>
-        <input type="number" name="number" id="userAmount" />
+        <label>Bill</label>
+        <input type="number" name="number" id="billAmount" />
         <img src="images/icon-dollar.svg" alt="dollar icon" id="billInput"/>
 
         <div class="tip-container">
           <p>Select Tip %</p>
-          <button class="tipBtn" id="5">5%</button>
+          <button class="tipBtn" id="05">5%</button>
           <button class="tipBtn" id="10">10%</button>
           <button class="tipBtn" id="15">15%</button>
           <button class="tipBtn" id="25">25%</button>
@@ -44,13 +44,13 @@
             type="text"
             name="CustomNumber"
             id="CustomNumber"
-            class="tipBtn"
+            class="CustomInput"
             placeholder="Custom"
             max="10"
             min="1"
           />
 
-          <small>Number of People</small>
+          <label>Number of People</label>
           <input
             type="number"
             name="number"
@@ -64,16 +64,16 @@
         <div>
           <b>Tip Amount</b>
           <small> / person</small>
-          <span id="tip"></span>
+          <span id="tip">0.00</span>
         </div>
 
         <div>
           <b>Total</b>
           <small> / person</small>
-          <span id="total"></span>
+          <span id="total">0.00</span>
         </div>
 
-        <button>Reset</button>
+        <button id="reset">Reset</button>
       </div>
     </main>
 
