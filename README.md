@@ -40,6 +40,8 @@ The project now includes functions for calculating the total and tip values base
 
 I have completed the core functionality and the semantic structure for the project. 
 
+today I completed the common design layout for both mobile and desktop versions. This unified design ensures consistency across devices.
+
 ### Built with
 
 - Semantic HTML5 markup
@@ -80,6 +82,8 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 My next focus will be the design phase, especially improving the mobile and desktop layouts and making the project fully responsive.
 fter completing the project, I will focus on adding additional features and enhancements to extend its functionality.
+ 
+My next step is to finish the mobile-first approach and then move on to the desktop design.
 
 ### Useful resources
 

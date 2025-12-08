@@ -1,0 +1,125 @@
+@charset "utf-8";
+
+@import url("https://fonts.google.com/specimen/Space+Mono");
+
+/* Colors */
+:root {
+  /*Primary*/
+  --Green400: hsl(172, 67%, 45%);
+
+  /* Neutral*/
+  --Green900: hsl(183, 100%, 15%);
+  --Grey500: hsl(186, 14%, 43%);
+  --Grey400: hsl(184, 14%, 56%);
+  --Grey200: hsl(185, 41%, 84%);
+  --Grey50: hsl(189, 47%, 97%);
+  --White: hsl(0, 100%, 100%);
+  --borderRadius: 0.2rem;
+  --fontWeight: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--Grey200);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--Grey500);
+  font-family: Space Mono;
+}
+
+section {
+  background-color: var(--White);
+  border-radius: 1rem;
+}
+
+input {
+  border: none;
+  background-color: var(--Grey50);
+  width: 16rem;
+  height: 2rem;
+  border-radius: var(--borderRadius);
+  color: var(--Green900);
+  outline: none;
+}
+
+.tip-container .tipBtn {
+  background-color: var(--Green900);
+  border: none;
+  border-radius: var(--borderRadius);
+  width: 4rem;
+  height: 1.8rem;
+  color: var(--White);
+  font-weight: var(--fontWeight);
+}
+
+.tip-container .tipBtn:hover {
+  background-color: var(--Green400);
+  color: var(--Green900);
+  font-weight: var(--fontWeight);
+}
+
+.CustomInput {
+  border-radius: var(--borderRadius);
+  width: 4rem;
+  height: 1.8rem;
+  color: var(--Green900);
+  font-weight: 700;
+}
+
+.right-container {
+  width: 15rem;
+  height: 14rem;
+  background-color: var(--Green900);
+  border-radius: 1rem;
+}
+
+b {
+  color: var(--White);
+}
+
+small {
+  color: var(--Grey200);
+}
+
+.total,
+.tip {
+  color: var(--Green400);
+}
+
+.amount{
+    margin-top: 1rem;
+}
+
+span {
+    font-size: 2rem;
+  color: var(--Green400);
+  margin-top: 1rem;
+}
+
+.reset {
+  width: 13rem;
+  height: 2.5rem;
+  border-radius: var(--borderRadius);
+  border: none;
+  background-color: hsl(185.1, 88.8%, 21%);
+  font-weight: var(--fontWeight);
+  border: none;
+  margin-top: 3.5rem;
+  margin-left: 1rem;
+}
+
+.reset:hover {
+  background-color: var(--Green400);
+}
+
+.right-container div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
