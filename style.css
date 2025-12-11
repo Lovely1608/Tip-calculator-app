@@ -36,26 +36,60 @@ body {
 section {
   background-color: var(--White);
   border-radius: 1rem;
+  height: auto;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+}
+
+main > img{
+    padding: 4rem;
+  padding-left: 9rem;
 }
 
 input {
   border: none;
   background-color: var(--Grey50);
-  width: 16rem;
-  height: 2rem;
+  height: 2.2rem;
   border-radius: var(--borderRadius);
   color: var(--Green900);
   outline: none;
+  width: 90%;
+  margin-left: 1rem;
+  margin-top: 0.3rem;
+  font-size: 1.2rem;
+  font-weight: var(--fontWeight);
+  /* padding-left: 10rem; */
+}
+
+.left-container {
+  width: 100%;
+  height: 20rem;
+}
+
+label {
+  margin-left: 1rem;
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.2rem;
+  font-weight: var(--fontWeight);
+}
+
+.tip-container {
+  width: 100%;
+  padding-left: 0.5rem;
 }
 
 .tip-container .tipBtn {
   background-color: var(--Green900);
   border: none;
   border-radius: var(--borderRadius);
-  width: 4rem;
-  height: 1.8rem;
+  width: 10rem;
+  height: 2.5rem;
   color: var(--White);
   font-weight: var(--fontWeight);
+  font-size: 1rem;
+  margin-left: 0.8rem;
+  margin-top: 0.8rem;
 }
 
 .tip-container .tipBtn:hover {
@@ -66,17 +100,27 @@ input {
 
 .CustomInput {
   border-radius: var(--borderRadius);
-  width: 4rem;
-  height: 1.8rem;
-  color: var(--Green900);
+  width: 9.5rem;
+  height: 2.5rem;
   font-weight: 700;
+  text-align: center;
+  font-size: 1rem;
+  margin-left: 1rem;
+  color: var(--Green900);
+}
+
+.CustomInput:hover {
+  background-color: var(--Green900);
+  color: var(--White);
 }
 
 .right-container {
-  width: 15rem;
+  width: 20rem;
   height: 14rem;
   background-color: var(--Green900);
   border-radius: 1rem;
+  margin-top: 3rem;
+  margin-left: 2rem;
 }
 
 b {
@@ -92,18 +136,18 @@ small {
   color: var(--Green400);
 }
 
-.amount{
-    margin-top: 1rem;
+.amount {
+  margin-top: 1rem;
 }
 
 span {
-    font-size: 2rem;
+  font-size: 2rem;
   color: var(--Green400);
   margin-top: 1rem;
 }
 
 .reset {
-  width: 13rem;
+  width: 18rem;
   height: 2.5rem;
   border-radius: var(--borderRadius);
   border: none;
@@ -112,6 +156,7 @@ span {
   border: none;
   margin-top: 3.5rem;
   margin-left: 1rem;
+  font-size: 1.2rem;
 }
 
 .reset:hover {
