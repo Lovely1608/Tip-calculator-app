@@ -38,7 +38,7 @@ Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to t
 
 The project now includes functions for calculating the total and tip values based on user inputs, including percentage calculations and custom tip values. I also created a function to reset all fields.
 
-I have completed the core functionality and the semantic structure for the project. 
+I have completed the core functionality and the semantic structure for the project.
 
 today I completed the common design layout for both mobile and desktop versions. This unified design ensures consistency across devices.
 
@@ -52,16 +52,19 @@ today I completed the common design layout for both mobile and desktop versions.
 - Java Script function
 - [Styled Components](https://styled-components.com/) - For styles
 
-
 ### What I learned
 
 1. Avoid using the querySelector when using the forEach because it works on the array or NodeList use instead querySelectorAll.
+
+2. Today I completed a mobile design and learned that the <label> tag is an inline element. To adjust its position, I had to change its display property to block.
 
 To see how you can add code snippets, see below:
 
 ```css
 .proud-of-this-css {
-  color: papayawhip;
+  label {
+    display: block;
+  }
 }
 ```
 
@@ -82,13 +85,13 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 My next focus will be the design phase, especially improving the mobile and desktop layouts and making the project fully responsive.
 fter completing the project, I will focus on adding additional features and enhancements to extend its functionality.
- 
+
 My next step is to finish the mobile-first approach and then move on to the desktop design.
 
 ### Useful resources
 
 - [Example resource 1](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/if) - This helped me for understand if condition for making my code more robust. I really liked this method and will use it going forward.
-- [Example resource 2](https://www.frontendmentor.io/learning-paths/javascript-fundamentals-oR7g6-mTZ-/article/660eb6a32f40450f917475d4/read) - This is an amazing article which helped me finally understand how can I make code look more readable and about the  DRY. I'd recommend it to anyone still learning this concept.
+- [Example resource 2](https://www.frontendmentor.io/learning-paths/javascript-fundamentals-oR7g6-mTZ-/article/660eb6a32f40450f917475d4/read) - This is an amazing article which helped me finally understand how can I make code look more readable and about the DRY. I'd recommend it to anyone still learning this concept.
 
 ## Author
 
