@@ -25,7 +25,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./Mobile.png)
+![](./Desktop.png)
 
 Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
 
@@ -87,6 +88,8 @@ My next focus will be the design phase, especially improving the mobile and desk
 fter completing the project, I will focus on adding additional features and enhancements to extend its functionality.
 
 My next step is to finish the mobile-first approach and then move on to the desktop design.
+
+The design is complete, and now my main focus will be on refining the details to make my function more robust
 
 ### Useful resources
 
