@@ -32,9 +32,9 @@ const buttons = (e) => {
     const totalPerPerson = (billValue / totalTipAmount) * numberOfPeople;
 
     //display the result
-    tipResult.innerHTML = parseFloat(tipPerPerson.toFixed(2)); //Format to 2 decimal
+    tipResult.innerHTML = "$ " + parseFloat(tipPerPerson.toFixed(2)); //Format to 2 decimal
 
-    totalResult.innerHTML = parseFloat(totalPerPerson.toFixed(2));
+    totalResult.innerHTML = "$ " + parseFloat(totalPerPerson.toFixed(2));
 
     bill.style.border = "";
     people.style.border = "";
@@ -70,11 +70,14 @@ customTip.addEventListener("input", () => {
 
     const totalPerPerson = (billValue / totalCustomTipAmount) * numberOfPeople;
 
-    tipResult.innerHTML = parseFloat(tipPerPerson.toFixed(2)); //Format to 2 decimal
+    tipResult.innerHTML = "$ " + parseFloat(tipPerPerson.toFixed(2)); //Format to 2 decimal
 
-    totalResult.innerHTML = parseFloat(totalPerPerson.toFixed(2));
+    totalResult.innerHTML = "$ " + parseFloat(totalPerPerson.toFixed(2));
 
-    totalResult.innerHTML = customPercentage;
+    totalResult.innerHTML = "$ " + customPercentage;
+
+    msg.innerHTML = "";
+    msg2.innerHTML = "";
 
     bill.style.border = "";
     people.style.border = "";
@@ -85,7 +88,6 @@ customTip.addEventListener("input", () => {
     tipResult.innerHTML = "$ 0.00";
     totalResult.innerHTML = "$ 0.00";
 
-    
     msg.innerHTML = "Enter valid input!";
     msg2.innerHTML = "Enter valid input!";
     msg.classList.add("add");
