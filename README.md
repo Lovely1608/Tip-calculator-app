@@ -13,7 +13,6 @@ This is a solution to the [Tip calculator app challenge on Frontend Mentor](http
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ### The challenge
 
@@ -28,12 +27,12 @@ Users should be able to:
 ![](./Mobile.png)
 ![](./Desktop.png)
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
+
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/Lovely1608/Tip-calculator-app.git)
+- Live Site URL: [Add live site URL here](https://lovely1608.github.io/Tip-calculator-app/)
 
 ## My process
 
@@ -82,8 +81,6 @@ if ((!isNaN(billValue) && !isNaN(numberOfPeople)) || numberOfPeople < 0) {
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
 My next focus will be the design phase, especially improving the mobile and desktop layouts and making the project fully responsive.
 fter completing the project, I will focus on adding additional features and enhancements to extend its functionality.
 
@@ -98,8 +95,4 @@ The design is complete, and now my main focus will be on refining the details to
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-## Acknowledgments
+- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/solutions/tip-calculator-with-java-script-GxAAPrrx2r)
