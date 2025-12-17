@@ -5,6 +5,8 @@ const totalResult = document.getElementById("total");
 const people = document.getElementById("numberOfPeople");
 const customTip = document.getElementById("CustomNumber");
 const resetBtn = document.getElementById("reset");
+const msg = document.getElementById("mesg");
+const msg2 = document.getElementById("mesg2");
 
 const buttons = (e) => {
   //Format number of US Dollar (USD)
@@ -40,8 +42,13 @@ const buttons = (e) => {
     bill.style.border = "solid 1px red";
     people.style.border = "solid 1px red";
 
-    tipResult.innerHTML = "0.00";
-    totalResult.innerHTML = "0.00";
+    msg.innerHTML = "Enter valid input!";
+    msg2.innerHTML = "Enter valid input!";
+    msg.classList.add("add");
+    msg2.classList.add("add");
+
+    tipResult.innerHTML = "$ 0.00";
+    totalResult.innerHTML = "$ 0.00";
   }
 };
 
@@ -50,13 +57,11 @@ btn.forEach((element) => {
 });
 
 customTip.addEventListener("input", () => {
- 
   const billValue = parseFloat(bill.value);
-  
+
   const numberOfPeople = parseFloat(people.value);
- 
+
   if ((!isNaN(billValue) && !isNaN(numberOfPeople)) || numberOfPeople < 0) {
-    
     const customPercentage = parseFloat(customTip.value); //ensures the percentage value in number
 
     const totalCustomTipAmount = billValue * (customPercentage / 100);
@@ -77,8 +82,14 @@ customTip.addEventListener("input", () => {
     bill.style.border = "solid 1px red";
     people.style.border = "solid 1px red";
 
-    tipResult.innerHTML = "0.00";
-    totalResult.innerHTML = "0.00";
+    tipResult.innerHTML = "$ 0.00";
+    totalResult.innerHTML = "$ 0.00";
+
+    
+    msg.innerHTML = "Enter valid input!";
+    msg2.innerHTML = "Enter valid input!";
+    msg.classList.add("add");
+    msg2.classList.add("add");
   }
 });
 
@@ -88,6 +99,10 @@ resetBtn.addEventListener("click", () => {
   tipResult.innerHTML = "";
   people.value = "";
   totalResult.innerHTML = "";
-  tipResult.innerHTML = "0.00";
-  totalResult.innerHTML = "0.00";
+  tipResult.innerHTML = "$ 0.00";
+  totalResult.innerHTML = "$ 0.00";
+  bill.style.border = "";
+  people.style.border = "";
+  msg.innerHTML = "";
+  msg2.innerHTML = "";
 });

@@ -12,11 +12,9 @@
       href="./images/favicon-32x32.png"
     />
 
-    <link href="https://fonts.google.com/specimen/Space+Mono" />
-
     <title>Frontend Mentor | Tip calculator app</title>
     <link rel="stylesheet" href="style.css" />
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <!-- Feel free to remove these styles or customise in your own stylesheet -->
     <style>
       .attribution {
         font-size: 11px;
@@ -33,17 +31,25 @@
 
       <section>
         <div class="left-container">
-          <label>Bill</label>
+          <div class="mesgBox">
+            <label>Bill</label>
+            <label id="mesg"></label>
+          </div>
           <input type="text" name="number" id="billAmount" />
-          <img src="images/icon-dollar.svg" alt="dollar icon" id="billInput" class="dollarIcon"/>
+          <img
+            src="images/icon-dollar.svg"
+            alt="dollar icon"
+            id="billInput"
+            class="dollarIcon"
+          />
 
           <label>Select Tip %</label>
           <div class="tip-container">
-            <button class="tipBtn" id="05">5%</button>
-            <button class="tipBtn" id="10">10%</button>
-            <button class="tipBtn" id="15">15%</button>
-            <button class="tipBtn" id="25">25%</button>
-            <button class="tipBtn" id="50">50%</button>
+            <button class="tipBtn" value="button" id="05">5%</button>
+            <button class="tipBtn" value="button" id="10">10%</button>
+            <button class="tipBtn" value="button" id="15">15%</button>
+            <button class="tipBtn" value="button" id="25">25%</button>
+            <button class="tipBtn" value="button" id="50">50%</button>
             <input
               type="text"
               name="CustomNumber"
@@ -53,14 +59,16 @@
               max="10"
               min="1"
             />
-
-            <label>Number of People</label>
+            <div class="mesgBox">
+              <label>Number of People</label>
+              <label id="mesg2"></label>
+            </div>
             <input
               type="text"
               name="number"
               id="numberOfPeople"
               placeholder="0"
-            /><img src="images/icon-person.svg" alt="" class="dollarIcon"/>
+            /><img src="images/icon-person.svg" alt="" class="dollarIcon" />
           </div>
         </div>
 
